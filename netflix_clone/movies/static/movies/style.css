@@ -1,0 +1,23 @@
+body {
+    background-color: #141414;
+}
+
+nav {
+    background-color: transparent;
+    padding-left: 0.75rem;
+}
+
+nav .brand-logo img {
+    max-width: 92px;
+}
+
+.home-movies-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-movie {
+    flex: 1 0 21%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
