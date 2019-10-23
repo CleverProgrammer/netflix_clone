@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'movies/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav  -->
+     <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">
+              <img src="{% static 'movies/assets/logo.svg' %}" />
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons left">search</i>Search</a></li>
+          </ul>
+        </div>
+     </nav>
+    <div class="row">
+        <div class="col">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
+</body>
+</html>

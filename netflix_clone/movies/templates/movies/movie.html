@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'movies/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<!-- Nav  -->
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+          <img src="{% static 'movies/assets/logo.svg' %}" />
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons left">search</i>Search</a></li>
+      </ul>
+    </div>
+ </nav>
+<!-- Movie Grid-->
+<div class="row">
+    <div class="col">
+        <div class="home-movies-container">
+            {% for movie in movies %}
+                <div class="card home-movie">
+                    <a href="#">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img src="{{ movie.thumbnail.url }}">
+                          <span class="card-title">{{ movie.title }}</span>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card home-movie">
+                <a href="#">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
